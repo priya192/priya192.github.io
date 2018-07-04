@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<title>welcome on MySlam</title>
+
+<style>
+		
+	
+*{
+margin: 0px;
+box-sizing: border-box;
+}
+
+.headermenu{
+height: 70px;
+border-bottom: 2px;
+width:1200px;
+box-shadow: 2px 4px 5px white;
+
+}
+
+	
+span.k1
+{
+font-size: 65px;
+color: #000066;
+
+margin-left: 1%;
+font-weight: bold;
+
+font-family:"arial rounded MT";
+text-shadow: 2px 2px 2px silver;
+}
+
+span.k2
+{
+font-size: 50px;
+color: #00cccc;
+height: 800px;
+font-weight: bold;
+font-family:"arial rounded MT";
+text-shadow: 2px 2px 2px silver;
+}
+span.k3
+{
+font-size: 65px;
+color:#000066;
+font-weight: bold;
+font-family:"arial rounded MT";
+text-shadow: 2px 2px 2px silver;
+}
+span.k4
+{
+font-size: 50px;
+color:   #00cccc;
+font-weight: bold;
+font-family:"arial rounded MT";
+text-shadow: 2px 2px 2px silver;
+}
+span.k5
+{
+font-size: 50px;
+color: #00cccc;
+font-weight: bold;
+font-family:"arial rounded MT";
+text-shadow: 2px 2px 2px silver;
+}
+span.k6
+{
+font-size: 50px;
+color: #00cccc;
+font-weight: bold;
+font-family:"arial rounded MT";
+text-shadow: 2px 2px 2px silver;
+}
+
+
+
+
+img#logo1{
+   
+width:80px;
+    
+ height: 85px;
+}
+
+
+
+*,
+*::after,
+*::before {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+}
+
+
+.preview {
+		display: block;
+		width: 200px;
+		height: 200px;
+		margin: 20px auto;
+		border: 2px solid rgb(33, 122, 105);
+		border-radius: 50%;
+		overflow: hidden;
+}
+
+.file-upload-wrapper {
+		position: relative;
+		z-index: 5;
+		display: block;
+		width: 250px;
+		height: 30px;
+		margin: 5px auto;
+		border-right: 2px dotted rgb(33, 122, 105);
+		border-bottom: 2px dotted rgb(33, 122, 105);
+		border-left: 2px dotted rgb(33, 122, 105);
+}
+
+.file-upload-native,
+.file-upload-text {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+		cursor: pointer;
+}
+
+.file-upload-native:focus,
+.file-upload-text:focus {
+		outline: none;
+}
+
+.file-upload-text {
+		z-index: 10;
+		padding: 5px 15px 8px;
+		overflow: hidden;
+		font-size: 14px;
+		line-height: 1.4;
+		cursor: pointer;
+		text-align: center;
+		letter-spacing: 1px;
+		text-overflow: ellipsis;
+		color: rgb(144, 162, 148);
+		border: 0;
+		background-color: transparent;
+}
+
+.file-upload-native {
+		z-index: 15;
+		opacity: 0;
+}
+
+
+input[type="submit"].qwqw
+{
+ 
+    width:100px;
+    height:30px;
+    margin-left: 70px;
+    background: #000066;
+    color: silver;
+    border-radius:5px;
+    
+}
+
+</style>
+
+</head>
+<body> 
+   
+<header class="headermenu">
+<span class="k1">M</span>
+<span class="k2" style="margin-left:-7px;">y</span>
+<span class="k3" style="margin-left:-7px;">S</span>
+<span class="k4" style="margin-left:-7px;">l</span>
+<span class="k5" style="margin-left:-7px;">a</span>
+<span class="k6" style="margin-left:-7px;">m</span>
+</header>
+ 
+<img id="logo1"  style="margin-left: 197px; margin-top: -88px;" src="z_1.png"/>
+  
+    <div class="line"></div><hr/><hr/><hr/><hr/>
+<hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/>
+<br/><br/>
+
+
+<div class="preview img-wrapper"></div>
+<div class="file-upload-wrapper">
+    <form action="uploadServlet" method="post" enctype="multipart/form-data">  
+
+		<input type="file"  name="photo" class="file-upload-native" accept="image/*" />
+		<input type="text" disabled placeholder="upload image" class="file-upload-text"/>
+<br/><br/><br/><br/>
+<input type="submit" class="qwqw" name="b1" value="Upload"/>  
+</form>  
+</div>
+
+
+</body></html>
